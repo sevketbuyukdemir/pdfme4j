@@ -17,7 +17,7 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://opensource.org</url>
+            <url>https://opensource.org/license/mit/</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -40,7 +40,7 @@
     </scm>
 
     <issueManagement>
-        <url>https://github.com/classgraph/classgraph/issues</url>
+        <url>https://github.com/sevketbuyukdemir/pdfme4j/issues</url>
     </issueManagement>
 
     <properties>
@@ -180,6 +180,10 @@
                         </goals>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <keyname>6D9AE645004553BE</keyname>
+                </configuration>
             </plugin>
 
             <plugin>
