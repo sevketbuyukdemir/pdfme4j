@@ -85,7 +85,7 @@ For example, define the version in your Maven properties:
 
 ```xml
 <properties>
-    <pdfme4j.version>YOUR_LATEST_VERSION</pdfme4j.version>
+    <pdfme4j.version>0.1.0</pdfme4j.version>
 </properties>
 ```
 
