@@ -6,7 +6,7 @@
 
     <groupId>io.github.sevketbuyukdemir</groupId>
     <artifactId>pdfme4j</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
 
     <name>pdfme4j</name>
     <description>A pure Java port of pdfme. Easily generate PDFs using pdfme's frontend JSON templates without Node.js

@@ -34,20 +34,30 @@ Built on top of **Apache PDFBox**, pdfme4j is designed to make pdfme-style PDF g
 
 The following plugins are currently registered by default:
 
-| Type                | Plugin                    | Description                               |
-| ------------------- | ------------------------- | ----------------------------------------- |
-| `text`              | `TextPlugin`              | Render text content                       |
-| `multiVariableText` | `MultiVariableTextPlugin` | Render text containing multiple variables |
-| `image`             | `ImagePlugin`             | Render images                             |
-| `signature`         | `ImagePlugin`             | Signature/image rendering                 |
-| `line`              | `ShapePlugin`             | Draw lines                                |
-| `rectangle`         | `ShapePlugin`             | Draw rectangles                           |
-| `circle`            | `ShapePlugin`             | Draw circles                              |
-| `qrcode`            | `BarcodePlugin`           | Generate QR codes                         |
-| `barcode`           | `BarcodePlugin`           | Generate barcodes                         |
-| `barcodes`          | `BarcodePlugin`           | Barcode rendering                         |
-| `table`             | `TablePlugin`             | Render tables                             |
-| `svg`               | `SvgPlugin`               | Render SVG content                        |
+| Type                | Plugin                    | Description                       |
+|---------------------|---------------------------|-----------------------------------|
+| `text`              | `TextPlugin`              | Render text content               |
+| `multiVariableText` | `MultiVariableTextPlugin` | Render text containing variables  |
+| `image`             | `ImagePlugin`             | Render images                     |
+| `signature`         | `ImagePlugin`             | Signature/image rendering         |
+| `svg`               | `SvgPlugin`               | Render SVG content                |
+| `table`             | `TablePlugin`             | Render tables                     |
+| `line`              | `ShapePlugin`             | Draw lines                        |
+| `rectangle`         | `ShapePlugin`             | Draw rectangles                   |
+| `ellipse`           | `ShapePlugin`             | Draw ellipses                     |
+| `qrcode`            | `BarcodePlugin`           | Generate QR codes                 |
+| `ean13`             | `BarcodePlugin`           | Generate EAN-13 barcodes          |
+| `ean8`              | `BarcodePlugin`           | Generate EAN-8 barcodes           |
+| `code39`            | `BarcodePlugin`           | Generate Code 39 barcodes         |
+| `code128`           | `BarcodePlugin`           | Generate Code 128 barcodes        |
+| `itf14`             | `BarcodePlugin`           | Generate ITF-14 barcodes          |
+| `upca`              | `BarcodePlugin`           | Generate UPC-A barcodes           |
+| `upce`              | `BarcodePlugin`           | Generate UPC-E barcodes           |
+| `pdf417`            | `BarcodePlugin`           | Generate PDF417 barcodes          |
+| `datamatrix`        | `BarcodePlugin`           | Generate Data Matrix barcodes     |
+| `gs1datamatrix`     | `BarcodePlugin`           | Generate GS1 Data Matrix barcodes |
+| `codabar`           | `BarcodePlugin`           | Generate Codabar barcodes         |
+| `nw7`               | `BarcodePlugin`           | Generate NW-7 barcodes            |
 
 The plugin system is extensible, so applications can register their own plugins.
 
@@ -85,7 +95,7 @@ For example, define the version in your Maven properties:
 
 ```xml
 <properties>
-    <pdfme4j.version>0.1.1</pdfme4j.version>
+    <pdfme4j.version>0.1.2</pdfme4j.version>
 </properties>
 ```
 

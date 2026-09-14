@@ -26,25 +26,37 @@ public class Generator {
     private final Map<String, File> customFonts = new HashMap<>();
 
     public Generator() {
-        plugins.put("image", new ImagePlugin());
+        // Text
         plugins.put("text", new TextPlugin());
-        plugins.put("signature", plugins.get("image"));
-
         MultiVariableTextPlugin mvPlugin = new MultiVariableTextPlugin();
         plugins.put("multiVariableText", mvPlugin);
-
+        // Image
+        plugins.put("image", new ImagePlugin());
+        plugins.put("signature", plugins.get("image"));
+        // SVG
+        plugins.put("svg", new SvgPlugin());
+        // Table
+        plugins.put("table", new TablePlugin());
+        // Shapes
         ShapePlugin shapePlugin = new ShapePlugin();
         plugins.put("line", shapePlugin);
         plugins.put("rectangle", shapePlugin);
-        plugins.put("circle", shapePlugin);
-
+        plugins.put("ellipse", shapePlugin);
+        // Barcodes
         BarcodePlugin barcodePlugin = new BarcodePlugin();
         plugins.put("qrcode", barcodePlugin);
-        plugins.put("barcode", barcodePlugin);
-        plugins.put("barcodes", barcodePlugin);
-
-        plugins.put("table", new TablePlugin());
-        plugins.put("svg", new SvgPlugin());
+        plugins.put("ean13", barcodePlugin);
+        plugins.put("ean8", barcodePlugin);
+        plugins.put("code39", barcodePlugin);
+        plugins.put("code128", barcodePlugin);
+        plugins.put("itf14", barcodePlugin);
+        plugins.put("upca", barcodePlugin);
+        plugins.put("upce", barcodePlugin);
+        plugins.put("pdf417", barcodePlugin);
+        plugins.put("datamatrix", barcodePlugin);
+        plugins.put("gs1datamatrix", barcodePlugin);
+        plugins.put("codabar", barcodePlugin);
+        plugins.put("nw7", barcodePlugin);
     }
 
     public void registerPlugin(String type, IPdfmePlugin plugin) {
